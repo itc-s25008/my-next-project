@@ -14,6 +14,8 @@ type Props = {
   }>;
 };
 
+export const revalidate = 0;
+
 // 既知の記事は、ビルド時に事前生成する
 export async function generateStaticParams() {
   const { contents } = await getNewsList({ fields: "id", limit: 100 });
