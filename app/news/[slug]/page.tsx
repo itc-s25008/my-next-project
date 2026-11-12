@@ -14,7 +14,6 @@ type Props = {
   }>;
 };
 
-export const revalidate = 60;
 
 // 既知の記事は、ビルド時に事前生成する
 export async function generateStaticParams() {
